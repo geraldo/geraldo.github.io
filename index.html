@@ -1,3 +1,138 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mapping expertise brought to your web!">
+    <meta name="author" content="Gerald Kogler">
+    <link rel="shortcut icon" href="favicon.ico">
 
-edit from prose
+    <title>Mapping expertise</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Mapping expertise</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Mapping expertise brought to your web!</h1>
+        <p>Looking for a custom map on your site? We are a team of coders and designers dedicated to state of the art on-line maps. Check out some of our projects!</p>
+        <p id="filter">
+			<button type="button" class="btn btn-default btn-success btn-sm all">All</button>
+			<button type="button" class="btn btn-default btn-sm OpenStreetMap">OpenStreetMap</button>
+			<button type="button" class="btn btn-default btn-sm Mapbox">Mapbox</button>
+			<button type="button" class="btn btn-default btn-sm Leaflet">Leaflet</button>
+			<button type="button" class="btn btn-default btn-sm OpenLayers">OpenLayers</button>
+			<button type="button" class="btn btn-default btn-sm Crowdsourcing">Crowdsourcing</button>
+			<button type="button" class="btn btn-default btn-sm OpenData">OpenData</button>
+			<button type="button" class="btn btn-default btn-sm Wordpress">Wordpress</button>
+			<button type="button" class="btn btn-default btn-sm Drupal">Drupal</button>
+			<button type="button" class="btn btn-default btn-sm jQuery">jQuery</button>
+			<button type="button" class="btn btn-default btn-sm gdrive">gdrive</button>
+		</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-3 OpenStreetMap Mapbox Leaflet jQuery gdrive">
+			<div class="thumbnail">
+			  <a href="marianao.html"><img src="imgs/marianao.png" alt="Thumbnail Marianao"></a>
+			  <div class="caption">
+				  <h2><a href="marianao.html">Marianao</a></h2>
+				  <p>Map of common goods of Marianao neighbourhood at Sant Boi de Llobregat/Spain.</p>
+				  <p><a class="btn btn-default" href="marianao.html" role="button">View details &raquo;</a></p>
+			  </div>
+			</div>
+        </div>
+        <div class="col-xs-6 col-md-3 OpenStreetMap Mapbox Leaflet Crowdsourcing OpenData jQuery gdrive">
+			<div class="thumbnail">
+                <a href="barrisicrisi.html"><img src="imgs/barrisicrisi.png" alt="Thumbnail Barrisicrisi"></a>
+			  <div class="caption">
+				  <h2><a href="barrisicrisi.html">Barris i Crisi</a></h2>
+				  <p>A research about the effects and social consequences of the crisis, and the responses to this situation from the neighbourhoods.</p>
+				  <p><a class="btn btn-default" href="barrisicrisi.html" role="button">View details &raquo;</a></p>
+			  </div>
+			</div>
+        </div>
+        <div class="col-xs-6 col-md-3 OpenStreetMap Mapbox Leaflet OpenData Wordpress jQuery">
+			<div class="thumbnail">
+                <a href="linzpflueckt.html"><img src="imgs/linz-pflückt.png" alt="Thumbnail Linz Pflückt"></a>
+			  <div class="caption">
+                  <h2><a href="linzpflueckt.html">Linz Pflückt</a></h2>
+				  <p>Map of more than 2000 public fruit trees and community gardening projects at Linz/Austria.</p>
+				  <p><a class="btn btn-default" href="linzpflueckt.html" role="button">View details &raquo;</a></p>
+			  </div>
+			</div>
+        </div>
+        <div class="col-xs-6 col-md-3 OpenStreetMap OpenLayers Crowdsourcing Drupal">
+			<div class="thumbnail">
+			  <a href="casastristes.html"><img src="imgs/casastristes.png" alt="Thumbnail Casastristes"></a>
+			  <div class="caption">
+                  <h2><a href="casastristes.html">Casastristes</a></h2>
+				  <p>"Sad houses" is a crowdsourcing map of vacant houses in Spain.</p>
+				  <p><a class="btn btn-default" href="casastristes.html" role="button">View details &raquo;</a></p>
+			  </div>
+			</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; <a href="http://go.yuri.at/">Gerald Kogler</a> 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var btnClasses = "btn btn-success btn-sm";
+			var btnClasses2 = "btn-success";
+			$('#filter button').click(function () {
+				var ourClass = $(this).attr('class');
+				ourClass = ourClass.substring(btnClasses.length+1, ourClass.length);
+console.log("c:"+ourClass);
+				$('#filter .btn-success').addClass('btn-default');
+				$('#filter .btn-success').removeClass('btn-success');
+				$(this).addClass('btn-success');
+console.log($(this).attr('class'));
+				if (ourClass == 'all') {
+				    $('.row').children().show();
+				} else {
+				    $('.row').children('div:not(.' + ourClass + ')').hide();
+				    $('.row').children('div.' + ourClass).show();
+				}
+
+				return false;
+			});
+		});
+	</script>
+  </body>
+</html>

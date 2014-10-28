@@ -1,0 +1,25 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.jumbotron {
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+#col1 {
+	float:left;
+	margin-right:50px;
+	margin-bottom:100px;
+}
+
+#col2 {
+	margin-bottom:20px;
+}
+
+footer {
+	clear:both;
+}
+
