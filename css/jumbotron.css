@@ -23,3 +23,6 @@ footer {
 	clear:both;
 }
 
+.thumbnail {
+	min-height: 400px;
+}
