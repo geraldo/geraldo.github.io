@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mapping expertise brought to your web!">
+    <meta name="description" content="Mapping expertise and data insights">
     <meta name="author" content="Gerald Kogler">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Mapping expertise</title>
+    <title>Mapping expertise and data insights</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Mapping expertise</a>
+          <a class="navbar-brand" href="#">Mapping expertise and data insights</a>
         </div>
       </div>
     </div>
@@ -36,8 +36,8 @@
     <!-- Intro -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Mapping expertise brought to your web!</h1>
-        <p>Looking for data insights on maps? We are a team of coders and designers dedicated to state of the art on-line maps. Check out some of our projects!</p>
+        <h1>Mapping expertise and data insights</h1>
+        <p>Looking for data insights on maps? We are a team of coders and designers dedicated to state of the art on-line maps and data visualizations. Check out some of our projects!</p>
         <p id="filter">
 			<button type="button" class="btn btn-default btn-success btn-sm all">All</button>
 			<button type="button" class="btn btn-default btn-sm OpenLayers">OpenLayers</button>
@@ -50,11 +50,13 @@
 			<button type="button" class="btn btn-default btn-sm Javascript">Javascript</button>
 			<button type="button" class="btn btn-default btn-sm jQuery">jQuery</button>
 			<button type="button" class="btn btn-default btn-sm gdrive">gdrive</button>
+			<button type="button" class="btn btn-default btn-sm QGIS">QGIS</button>
 			<button type="button" class="btn btn-default btn-sm Drupal">Drupal</button>
 			<button type="button" class="btn btn-default btn-sm Wordpress">Wordpress</button>
 			<button type="button" class="btn btn-default btn-sm Crowdsourcing">Crowdsourcing</button>
 			<button type="button" class="btn btn-default btn-sm OpenData">OpenData</button>
 			<button type="button" class="btn btn-default btn-sm Barcelona">Barcelona</button>
+			<button type="button" class="btn btn-default btn-sm 2017">2017</button>
 			<button type="button" class="btn btn-default btn-sm 2016">2016</button>
 			<button type="button" class="btn btn-default btn-sm 2015">2015</button>
 			<button type="button" class="btn btn-default btn-sm 2014">2014</button>
@@ -66,6 +68,26 @@
 
     <div class="container">
       <div class="row">
+        <div class="col-xs-6 col-md-3 d3js Javascript Wordpress Crowdsourcing Barcelona 2017">
+			<div class="thumbnail">
+                <a href="catalogAMB.html"><img src="imgs/catalogAMB.png" alt="Thumbnail catalogAMB"></a>
+			  <div class="caption">
+				  <h2><a href="catalogAMB.html">Political innovation catalog</a></h2>
+				  <p>Tool to visualize urban politics in area of Barcelona.</p>
+				  <p><a class="btn btn-default" href="catalogAMB.html" role="button">View details &raquo;</a></p>
+			  </div>
+			</div>
+        </div>
+        <div class="col-xs-6 col-md-3 Leaflet QGIS Javascript Wordpress Crowdsourcing Barcelona 2017">
+			<div class="thumbnail">
+                <a href="mapAMB.html"><img src="imgs/mapAMB.png" alt="Thumbnail mapAMB"></a>
+			  <div class="caption">
+				  <h2><a href="mapAMB.html">Map of social innovation</a></h2>
+				  <p>Colaborative map of innitiatives working on political innovation.</p>
+				  <p><a class="btn btn-default" href="mapAMB.html" role="button">View details &raquo;</a></p>
+			  </div>
+			</div>
+        </div>
         <div class="col-xs-6 col-md-3 OpenLayers Mapnik TileStache Javascript Barcelona 2016">
 			<div class="thumbnail">
                 <a href="cartahistorica.html"><img src="imgs/cartahistorica.png" alt="Thumbnail cartahistorica"></a>
@@ -181,15 +203,11 @@
       <hr>
 
       <footer>
-        <p>&copy; <a href="http://go.yuri.at/">Gerald Kogler</a> 2016</p>
+        <p>&copy; <a href="http://go.yuri.at/">Gerald Kogler</a> 2017</p>
       </footer>
-    </div> <!-- /container -->
+    </div>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script>
 		$(document).ready(function () {
