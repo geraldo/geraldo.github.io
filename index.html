@@ -301,13 +301,14 @@
 			var btnClasses = "btn btn-success btn-sm";
 			var btnClasses2 = "btn-success";
 			$('#filter button').click(function () {
+				$('#filter .btn-success').removeClass('btn-success');
+
 				var ourClass = $(this).attr('class');
 				ourClass = ourClass.substring(btnClasses.length+1, ourClass.length);
-console.log("c:"+ourClass);
+				//console.log("class:"+ourClass);
 				$('#filter .btn-success').addClass('btn-default');
-				$('#filter .btn-success').removeClass('btn-success');
 				$(this).addClass('btn-success');
-console.log($(this).attr('class'));
+
 				if (ourClass == 'all') {
 				    $('.row').children().show();
 				} else {
