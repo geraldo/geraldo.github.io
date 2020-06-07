@@ -10,17 +10,8 @@
 
     <title>Mapping expertise and data insights</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -338,29 +329,35 @@
     </div>
 
     <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 	<script>
 		$(document).ready(function () {
 			var btnClasses = "btn btn-success btn-sm";
 			var btnClasses2 = "btn-success";
+
 			$('#filter button').click(function () {
 				$('#filter .btn-success').removeClass('btn-success');
 
 				var ourClass = $(this).attr('class');
 				ourClass = ourClass.substring(btnClasses.length+1, ourClass.length);
-				//console.log("class:"+ourClass);
-				$('#filter .btn-success').addClass('btn-default');
-				$(this).addClass('btn-success');
-
-				if (ourClass == 'all') {
+				if (ourClass === 'all') {
 				    $('.row').children().show();
 				} else {
 				    $('.row').children('div:not(.' + ourClass + ')').hide();
 				    $('.row').children('div.' + ourClass).show();
 				}
 
+				$('#filter .btn-success').addClass('btn-default');
+				$(this).addClass('btn-success');
+
 				return false;
 			});
+
+			// initial filter from get parameter?
+	        let params = new URLSearchParams(document.location.search.substring(1));
+	        let tag = params.get("tag");
+	        if (tag !== null) {
+	          $('#filter button.'+tag).click();
+	        }
 		});
 	</script>
   </body>
