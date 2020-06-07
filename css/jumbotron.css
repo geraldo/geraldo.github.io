@@ -10,9 +10,7 @@ body {
 }
 
 #col1 {
-	float:left;
-	margin-right:50px;
-	margin-bottom:100px;
+	margin-bottom:50px;
 }
 
 #col2 {
@@ -25,6 +23,10 @@ footer {
 
 .thumbnail {
 	min-height: 400px;
+}
+
+.caption {
+	min-height: 215px;
 }
 
 h2 {
