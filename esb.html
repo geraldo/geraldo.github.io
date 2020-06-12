@@ -10,17 +10,8 @@
 
     <title>Mapping expertise and data insights - Catalog of political innovation</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -39,30 +30,38 @@
         <h1>Barcelona Health Survey</h1>
         <p>Visualizing results of reports from Barcelona public health agency.</p>
         <p id="filter">
-      <button type="button" class="btn btn-success btn-sm 2019">2019</button>
-      <button type="button" class="btn btn-success btn-sm d3js">D3.js</button>
-      <button type="button" class="btn btn-success btn-sm plotly">plotly.js</button>
-      <button type="button" class="btn btn-success btn-sm datavis">datavis</button>
-			<button type="button" class="btn btn-success btn-sm Barcelona">Barcelona</button>
-		</p>
+          <button type="button" class="btn btn-success btn-sm 2019">2019</button>
+          <button type="button" class="btn btn-success btn-sm d3js">D3.js</button>
+          <button type="button" class="btn btn-success btn-sm plotly">plotly.js</button>
+          <button type="button" class="btn btn-success btn-sm datavis">datavis</button>
+    			<button type="button" class="btn btn-success btn-sm Barcelona">Barcelona</button>
+		    </p>
       </div>
     </div>
 
     <div class="container">
-		<div id="col1"><a href="https://www.aspb.cat/docs/enquestasalutbcn/"><img src="imgs/esb.png" alt="Thumbnail esb"></a></div>
-      	<div id="col2">
-		      <p>The public health agency of Barcelona does every five years a survey about essential health questions.</p>
-          <p>This tool reads the raw data of the survey and visualises the most important aspects as charts and maps. Additionally all raw data can be accessed and exported to different formats.</p>
-          <p>The motor behind this project is able to import different editions of the survey. This makes it possible to add past and future editions of the survey.</p>
-      		<p><u>Client:</u> <a href="https://www.aspb.cat/">ASPB</a></p>
-      	</div>
+      <div id="col1" class="col-xs-12 col-md-6">
+        <a href="https://www.aspb.cat/docs/enquestasalutbcn/"><img src="imgs/esb.png" alt="Thumbnail esb"></a>
+        <a data-fslightbox="gallery" href="gallery/esb1.png"><img src="imgs/esb.png" alt="Thumbnail esb"></a>
+        <a data-fslightbox="gallery" href="gallery/esb2.png"></a>
+        <a data-fslightbox="gallery" href="gallery/esb3.png"></a>
+        <a data-fslightbox="gallery" href="gallery/esb4.png"></a>
+      </div>
+      <div id="col2" class="col-xs-12 col-md-6">
+	      <p>The public health agency of Barcelona does every five years a survey about essential health questions.</p>
+        <p>This tool reads the raw data of the survey and visualises the most important aspects as charts and maps. Additionally all raw data can be accessed and exported to different formats.</p>
+        <p>The motor behind this project is able to import different editions of the survey. This makes it possible to add past and future editions of the survey.</p>
+    		<p><u>Client:</u> <a href="https://www.aspb.cat/">ASPB</a></p>
+    	</div>
 
-		<a class="btn btn-default" href="https://www.aspb.cat/docs/enquestasalutbcn/" role="button">Visit project</a>
+		  <a class="btn btn-default" href="https://www.aspb.cat/docs/enquestasalutbcn/" role="button">Visit project</a>
 
       <footer>
-		<hr>
+  		  <hr>
         <p>&copy; <a href="http://go.yuri.at/">Gerald Kogler</a> 2020</p>
       </footer>
     </div>
+
+    <script src="js/fslightbox.js"></script>
   </body>
 </html>
