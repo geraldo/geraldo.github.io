@@ -25,6 +25,10 @@ footer {
 	min-height: 400px;
 }
 
+.thumbnail .caption {
+    padding: 6px 9px;
+}
+
 .caption {
 	min-height: 215px;
 }
