@@ -40,3 +40,8 @@ h2 {
 .fslightbox-nav {
     display: none;
 }
+
+:not(.index) .btn-success:hover {
+  cursor: default;
+  background-color: #5cb85c;
+}
