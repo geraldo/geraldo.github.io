@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mapping expertise and data insights">
+    <meta name="author" content="Gerald Kogler">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>Mapping expertise and data insights - POUM Castellbisbal</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Mapping expertise and data insights</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>LayerTree2JSON QGIS Plugin</h1>
+        <p>Write a JSON file based on QGIS project layer tree.</p>
+        <p id="filter">
+          <button type="button" class="btn btn-success btn-sm 2022">2022</button>
+    			<button type="button" class="btn btn-success btn-sm QGISPlugin">QGIS Plugin</button>
+          <button type="button" class="btn btn-success btn-sm QGIS">QGIS</button>
+          <button type="button" class="btn btn-success btn-sm QGISServer">QGIS Server</button>
+          <button type="button" class="btn btn-success btn-sm MapProxy">MapProxy</button>
+          <button type="button" class="btn btn-success btn-sm PSIG">PSIG</button>
+    		</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="col1" class="col-xs-12 col-md-6">
+        <a data-fslightbox="gallery" href="gallery/layertree2json1.png"><img src="imgs/layertree2json.png" alt="Thumbnail layertree2json"></a>
+        <a data-fslightbox="gallery" href="gallery/layertree2json2.png"></a>
+        <a data-fslightbox="gallery" href="gallery/layertree2json3.png"></a>
+        <a data-fslightbox="gallery" href="gallery/layertree2json4.png"></a>
+      </div>
+      <div id="col2" class="col-xs-12 col-md-6">
+    		<p>This plugin parses QGIS 3 projects and writes a JSON config file with information representing the layer tree. The created file than automatically can be uploaded to a webserver using a SFTP connection.</p>
+        <p>The plugin is published on the official [QGIS Plugins Repository](https://plugins.qgis.org/plugins/layertree2json/), documentation can be found at [Github](https://github.com/geraldo/layertree2json).
+        <p>Usually the JSON config file then is used by a web viewer to show a layer switcher. An example usage can be seen by this [implementation](https://github.com/geraldo/layertree2jsonExample).</p>
+        <p><u>Client:</u> <a href="http://psig.es/">PSIG</a>, <a href="https://www.geoparcorigens.cat/">Geoparc Orígens</a></p>
+      </div>
+
+		  <a class="btn btn-default" href="https://bellamar.castelldefels.org/" role="button">Visit project</a>
+
+      <footer>
+		    <hr>
+        <p>&copy; <a href="https://go.yuri.at/">Gerald Kogler</a> 2022</p>
+      </footer>
+    </div>
+
+    <script src="js/fslightbox.js"></script>
+  </body>
+</html>
